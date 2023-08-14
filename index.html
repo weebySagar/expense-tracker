@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <h3 class="text-center">Expense Tracker</h3>
+
+
+    <!-- form input container -->
+    <div class="container my-4">
+        <div class="container-form">
+             <form class="d-md-flex  align-items-end gap-3" id="expenseForm">
+                 <div class="form-input flex-fill"  >
+                    <label for="amount" class="form-label">Enter Amount</label>
+                    <input type="number" class="form-control" name="amoount" id="amount">
+                </div>
+                <div class="form-input flex-fill" >
+                    <label for="description" class="form-label">Enter Description</label>
+
+                    <input type="text" class="form-control" name="description" id="description">
+                </div>
+                <div class="form-input flex-fill" >
+                    <label for="category" class="form-label">Select Category</label>
+
+                    <select class="form-select" aria-label="Default select example" id="category" name="category"
+                    style="--bs-form-select-bg-img:none"
+                    >
+                        <option selected value="">Select</option>
+                        <option value="Shopping" >Shopping</option>
+                        <option value="Food">Food</option>
+                        <option value="Trip">Trip</option>
+                      </select>
+                </div>
+                <div class="form-input  " >
+                  
+
+                    <button type="submit" class="btn btn-primary mt-2 md-my-0">Add Expense</button>
+                </div>
+               
+                
+            </form>
+         </div>
+    </div>
+
+
+    <!-- displaying data container -->
+    <div class="container list my-4">
+        <ul class="list-group"></ul>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+</body>
+</html>
